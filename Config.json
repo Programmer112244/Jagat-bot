@@ -1,0 +1,9 @@
+const fs = require('fs');
+
+// Read the config.json file
+const rawdata = fs.readFileSync('config.json');
+const config = JSON.parse(rawdata);
+
+// Access the values
+const accessToken = config.accessToken;
+const verifyToken = config.verifyToken;￼Enter
